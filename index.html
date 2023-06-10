@@ -6,22 +6,55 @@ DIRECTIONS: These practice problems will work similar to the ones we have seen i
 
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <section id="section1" class="sections">
-      <article id="article1" class="articles">Article 1</article>
-      <article id="article2" class="articles">Article 2</article>
-    </section>
-    <section id="section2" class="sections">
-      <article id="article3" class="articles">Article 3</article>
-      <article id="article4" class="articles">Article 4</article>
-    </section>
-    <section id="section3" class="sections">
-      <article id="article5" class="articles">Article 5</article>
-      <article id="article6" class="articles">Article 6</article>
-    </section>
-  </body>
+
+<head>
+  <style>
+    .sections {
+      border: 2px solid blue;
+      margin: 10px;
+    }
+
+    #article1 {
+      color: red;
+    }
+
+    #article2 {
+      color: green;
+    }
+
+    #article3 {
+      color: darkcyan;
+    }
+
+    #article4 {
+      color: maroon;
+    }
+
+    #article5 {
+      color: orange;
+    }
+
+    #article6 {
+      color: indigo;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="section1" class="sections">
+    <article id="article1" class="articles">Article 1</article>
+    <article id="article2" class="articles">Article 2</article>
+  </section>
+  <section id="section2" class="sections">
+    <article id="article3" class="articles">Article 3</article>
+    <article id="article4" class="articles">Article 4</article>
+  </section>
+  <section id="section3" class="sections">
+    <article id="article5" class="articles">Article 5</article>
+    <article id="article6" class="articles">Article 6</article>
+  </section>
+</body>
+
 </html>
 
 
@@ -50,22 +83,24 @@ DIRECTIONS: These practice problems will work similar to the ones we have seen i
 
 <!-- PROBLEM 5 (DEBUGGING): The following HTML markup will not work.  Find the mistake, so that the browser can clearly read the proper styling and change the background color to blue.  Hint: the mistake will not be with the term "background-color" -->
 
-<!--
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      .div {
-        background-color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <section id="section1" class="sections">
-      <div id="div1" class="divs">Article 1</div>
-      <div id="div2" class="divs">Article 2</div>
-    </section>
-    
-  </body>
+
+<head>
+  <style>
+    .divs {
+      background-color: blue;
+      color: white;
+    }
+  </style> <!-- missing s in div[s] -->
+</head>
+
+<body>
+  <section id="section1" class="sections">
+    <div id="div1" class="divs">Article 1</div>
+    <div id="div2" class="divs">Article 2</div>
+  </section>
+
+</body>
+
 </html>
--->
